@@ -55,7 +55,19 @@ h3 {
   color: var(--white);
 }
 
+.btn-secondary {
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  color: var(--black);
+  border: 0.1rem solid var(--black);
+}
+
 .btn:hover {
+  color: var(--grey);
+}
+
+.btn-secondary:hover {
   color: var(--grey);
 }
 /* button end */
@@ -225,8 +237,7 @@ aside {
 }
 
 aside .tag-wrapper {
-  padding-bottom: 2rem;
-  border-bottom: 0.1rem solid var(--grey-light);
+  padding-bottom: 1rem;
 }
 
 aside .tags {
@@ -258,12 +269,47 @@ aside .see-more:hover {
   color: var(--dark-grey);
 }
 
+aside .about {
+  border-bottom: 0.1rem solid var(--grey-light);
+  padding-bottom: 1.5rem;
+}
+
+aside .author-wrapper img {
+  width: 42px;
+  height: 42px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+aside .author-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+aside .name-about {
+  display: flex;
+  flex-direction: column;
+}
+
+aside .name-about a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+aside .name-about p {
+  font-size: 1rem;
+  color: var(--grey);
+  margin: 0;
+}
+
 aside .links-wrapper {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 aside .link-nav {
